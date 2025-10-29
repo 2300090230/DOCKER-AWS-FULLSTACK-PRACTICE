@@ -22,7 +22,7 @@ services:
     container_name: artspringboot
     build:
       context: ./OnlineArt
-      dockerfile: ./OnlineArt/Dockerfile
+      dockerfile: ./Dockerfile
     image: dockeraws-artbackend:latest
     ports:
       - "2001:2000"
@@ -37,7 +37,7 @@ services:
     container_name: artreact
     build:
       context: ./onlineartgallery
-      dockerfile: ./onlineartgallery/Dockerfile
+      dockerfile: ./Dockerfile
     image: dockeraws-artfrontend:latest
     ports:
       - "3001:80"
